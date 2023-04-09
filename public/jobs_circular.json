@@ -6,7 +6,7 @@
     "company": "Google",
     "job_nature": {
       "full_time": true,
-      "part_time": false,
+      "remote": false,
       "contract": false
     },
     "location": "Mountain View, CA",
@@ -29,7 +29,7 @@
     "company": "Microsoft",
     "job_nature": {
       "full_time": true,
-      "part_time": false,
+      "remote": true,
       "contract": false
     },
     "location": "Redmond, WA",
@@ -51,8 +51,8 @@
     "position": "Data Scientist",
     "company": "Uber",
     "job_nature": {
-      "full_time": true,
-      "part_time": false,
+      "full_time": false,
+      "remote": true,
       "contract": true
     },
     "location": "San Francisco, CA",
@@ -76,7 +76,7 @@
     "company": "Netflix",
     "job_nature": {
       "full_time": true,
-      "part_time": false,
+      "remote": false,
       "contract": false
     },
     "location": "Los Gatos, CA",
@@ -99,7 +99,7 @@
     "company": "Amazon",
     "job_nature": {
       "full_time": true,
-      "part_time": false,
+      "remote": false,
       "contract": false
     },
     "location": "Seattle, WA",
@@ -122,8 +122,8 @@
     "company": "Toptal",
     "job_nature": {
       "full_time": false,
-      "part_time": true,
-      "contract": false
+      "remote": false,
+      "contract": true
     },
     "location": "Remote",
     "salary": "$80 - $100 per hour",

@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center shadow py-3 px-10">
+    <nav className="flex justify-between items-center shadow-md py-3 px-10 bg-primary">
       <Link to={"/"}>
         <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
       </Link>
@@ -33,7 +33,9 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <button className="btn-gradient">Start Applying</button>
+      <button className="px-3 py-2 font-semibold gradient">
+        Start Applying
+      </button>
     </nav>
   );
 };

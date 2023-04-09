@@ -9,6 +9,9 @@
 .default {
   @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-600;
 }
-.btn-gradient {
-  @apply bg-gradient-to-r from-blue-500 to-indigo-500 px-3 py-2 rounded-full text-white font-semibold;
+.gradient {
+  @apply bg-gradient-to-r from-blue-500 to-violet-500 rounded-md text-white;
+}
+.bg-primary {
+  @apply bg-[#F9F8FF];
 }
