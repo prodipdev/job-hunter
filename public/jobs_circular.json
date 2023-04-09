@@ -1,0 +1,141 @@
+[
+  {
+    "id": "job_43f248c5-a4f4-4c8c-98a6-4ef6a3a6b35d",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png",
+    "position": "Software Engineer",
+    "company": "Google",
+    "job_nature": {
+      "full_time": true,
+      "part_time": false,
+      "contract": false
+    },
+    "location": "Mountain View, CA",
+    "salary": "$130,000 - $170,000",
+    "job_description": "We are seeking a highly skilled software engineer to join our team at Google...",
+    "job_responsibility": [
+      "Design and implement new features for Google products",
+      "Collaborate with cross-functional teams to deliver high-quality software",
+      "Write clean, maintainable, and scalable code"
+    ],
+    "education_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software engineering",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@google.com"
+  },
+  {
+    "id": "job_0f1683c3-d758-4d3b-8a7c-12ec1e7477c9",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png",
+    "position": "Product Manager",
+    "company": "Microsoft",
+    "job_nature": {
+      "full_time": true,
+      "part_time": false,
+      "contract": false
+    },
+    "location": "Redmond, WA",
+    "salary": "$140,000 - $180,000",
+    "job_description": "We are seeking a talented product manager to join our team at Microsoft...",
+    "job_responsibility": [
+      "Lead the development and launch of new Microsoft products and features",
+      "Collaborate with cross-functional teams to ensure a seamless user experience",
+      "Analyze market trends and identify new business opportunities"
+    ],
+    "education_requirements": "Bachelor's or Master's degree in Business Administration, Computer Science, or related field",
+    "experiences": "5+ years of experience in product management",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@microsoft.com"
+  },
+  {
+    "id": "job_01529cf6-cd1c-4dd9-87b4-4a4a4a0a93f4",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
+    "position": "Data Scientist",
+    "company": "Uber",
+    "job_nature": {
+      "full_time": true,
+      "part_time": false,
+      "contract": true
+    },
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $160,000",
+    "job_description": "We are seeking a talented data scientist to join our team at Uber...",
+    "job_responsibility": [
+      "Analyze large data sets to derive insights and make data-driven decisions",
+      "Develop and maintain machine learning models",
+      "Collaborate with cross-functional teams to solve complex business problems"
+    ],
+    "education_requirements": "Master's or PhD in Computer Science, Mathematics, Statistics, or related field",
+    "experiences": "2+ years of experience in data science",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@uber.com"
+  },
+
+  {
+    "id": "job_79080f31-0427-4d50-9ef7-3db3d3c71f3d",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
+    "position": "Senior Software Engineer",
+    "company": "Netflix",
+    "job_nature": {
+      "full_time": true,
+      "part_time": false,
+      "contract": false
+    },
+    "location": "Los Gatos, CA",
+    "salary": "$150,000 - $200,000",
+    "job_description": "We are seeking a highly motivated software engineer to join our team at Netflix...",
+    "job_responsibility": [
+      "Design and develop new features for Netflix products",
+      "Optimize code for performance and scalability",
+      "Collaborate with cross-functional teams to ensure product quality"
+    ],
+    "education_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "7+ years of experience in software engineering",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@netflix.com"
+  },
+  {
+    "id": "job_ebe0c3f5-0ba2-40f5-89c5-c0cb0a51f12d",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
+    "position": "Business Intelligence Engineer",
+    "company": "Amazon",
+    "job_nature": {
+      "full_time": true,
+      "part_time": false,
+      "contract": false
+    },
+    "location": "Seattle, WA",
+    "salary": "$120,000 - $160,000",
+    "job_description": "We are seeking a talented business intelligence engineer to join our team at Amazon...",
+    "job_responsibility": [
+      "Design and develop data solutions to support business needs",
+      "Collaborate with cross-functional teams to gather requirements and ensure data accuracy",
+      "Develop and maintain dashboards and reports for business stakeholders"
+    ],
+    "education_requirements": "Bachelor's or Master's degree in Computer Science, Mathematics, Statistics, or related field",
+    "experiences": "3+ years of experience in business intelligence, data engineering, or related field",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@amazon.com"
+  },
+  {
+    "id": "job_34c84aa7-1980-4558-b811-53c22f7429d9",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Toptal-Logo-Main-Colors_RGB.png",
+    "position": "UX Designer",
+    "company": "Toptal",
+    "job_nature": {
+      "full_time": false,
+      "part_time": true,
+      "contract": false
+    },
+    "location": "Remote",
+    "salary": "$80 - $100 per hour",
+    "job_description": "We are seeking a talented UX designer to work with our clients at Toptal...",
+    "job_responsibility": [
+      "Design user interfaces and experiences for web and mobile applications",
+      "Collaborate with clients to gather requirements and provide design solutions",
+      "Provide design guidance and feedback to other team members"
+    ],
+    "education_requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction, or related field",
+    "experiences": "5+ years of experience in UX design",
+    "phone": "+1-XXX-XXX-XXXX",
+    "email": "jobs@toptal.com"
+  }
+]
