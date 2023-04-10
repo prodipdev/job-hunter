@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="p-10 flex items-center bg-primary">
+    <div className="px-10 flex items-center bg-primary">
       <div>
         <h1 className="text-3xl font-bold">
           One Step Closer To Your <br />{" "}
@@ -16,7 +16,7 @@ const Header = () => {
         <button className="px-3 py-2 gradient mt-5">Get Started</button>
       </div>
       <div>
-        <img src="/src/assets/hero.png" alt="Hero Image" />
+        <img src="https://i.ibb.co/7bbR6Lk/Hero-Image.webp" alt="Hero Image" />
       </div>
     </div>
   );
