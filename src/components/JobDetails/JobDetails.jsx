@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MainContext } from "../../RootLayout";
 import {
   CurrencyDollarIcon,
@@ -8,6 +8,7 @@ import {
   EnvelopeIcon,
   MapPinIcon,
 } from "@heroicons/react/24/solid";
+import { addToLocalDb } from "../utils/localStorageDB";
 
 const JobDetails = () => {
   const { jobCircular } = useContext(MainContext);
@@ -38,14 +39,14 @@ const JobDetails = () => {
             <br />
             <span> {job_description}</span>
           </p>
-          <p>
+          <div>
             <span className="font-semibold underline">Job Responsibility:</span>
             <ul>
-              {job_responsibility.map((res) => (
-                <li>{res}.</li>
+              {job_responsibility.map((res, index) => (
+                <li key={index}>{res}.</li>
               ))}
             </ul>
-          </p>
+          </div>
           <p>
             <span className="font-semibold">Educational Requirements:</span>{" "}
             <br />
@@ -98,7 +99,14 @@ const JobDetails = () => {
               <span>{location}</span>
             </p>
           </div>
-          <button className="mt-5 px-3 py-2 gradient w-full">Apply Now</button>
+          <Link to={"/"}>
+            <button
+              onClick={() => addToLocalDb(id)}
+              className="mt-5 px-3 py-2 gradient w-full"
+            >
+              Apply Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
