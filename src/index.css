@@ -13,5 +13,5 @@
   @apply bg-gradient-to-r from-blue-500 to-violet-500 rounded-md text-white;
 }
 .bg-primary {
-  @apply bg-[#F9F8FF];
+  @apply bg-[#f9f8ff];
 }
