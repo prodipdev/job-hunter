@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="px-5 sm:px-10 flex flex-col-reverse sm:flex-row items-center bg-primary">
+    <div className="px-5 py-3 sm:px-10 flex flex-col-reverse sm:flex-row items-center bg-primary">
       <div>
         <h1 className="text-3xl font-bold">
           One Step Closer To Your <br />{" "}
