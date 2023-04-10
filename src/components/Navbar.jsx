@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="flex justify-between items-center shadow-md py-3 px-5 sm:px-10 bg-primary">
+    <nav className="flex flex-col sm:flex-row justify-between items-center gap-3 shadow-md py-3 px-5 sm:px-10 bg-primary">
       <Link to={"/"}>
         <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
       </Link>
-      <ul className="flex gap-4">
+      <ul className="flex flex-col sm:flex-row gap-4">
         <li>
           <NavLink
             to={"/statistic"}
