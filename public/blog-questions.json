@@ -16,7 +16,7 @@
   },
   {
     "id": "A4",
-    "question": "What is useMemo and when we used id ?",
+    "question": "What is useMemo and when we used it ?",
     "answer": "In React, the useMemo hook is used to memoize a value or a complex computation, and recompute it only when its dependencies change. "
   }
 ]
