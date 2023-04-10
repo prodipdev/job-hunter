@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const AppliedCard = ({ circular }) => {
   const { id, image, position, company, job_nature, location, salary } =
     circular;
+
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between border rounded-md p-3 text-left">
       <div className="bg-gray-100 h-36 w-36 flex items-center justify-center rounded-md shadow shadow-violet-400">

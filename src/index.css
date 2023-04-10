@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
 .active {
   @apply font-medium tracking-wide text-indigo-600 transition-colors duration-200;
 }

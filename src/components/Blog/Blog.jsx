@@ -8,7 +8,7 @@ const Blog = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
-  console.log(blogs);
+
   return (
     <div>
       <h2 className="text-2xl font-semibold text-center bg-primary pb-16 mb-10 pt-10">

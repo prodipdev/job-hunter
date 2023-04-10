@@ -14,7 +14,6 @@ const JobDetails = () => {
   const { jobCircular } = useContext(MainContext);
   const { id } = useParams();
   const job = jobCircular.find((job) => job.id === id);
-  console.log(job);
 
   const {
     job_description,
