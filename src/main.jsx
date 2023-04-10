@@ -9,12 +9,14 @@ import Blog from "./components/Blog/Blog";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import JobDetails from "./components/JobDetails/JobDetails";
 import { jobListAndCategory } from "./components/utils/Loader";
+import ErrorPage from "./components/Error/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout></RootLayout>,
     loader: jobListAndCategory,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

@@ -33,28 +33,28 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-2 flex gap-2 flex-col">
-          <h3 className="text-2xl font-semibold mb-3 text-white">Company</h3>
+          <h3 className="text-xl font-semibold mb-3 text-white">Company</h3>
           <a href="#">Prototype</a>
           <a href="#">Plans & Pricing</a>
           <a href="#">Customers</a>
           <a href="#">Integrations</a>
         </div>
         <div className="col-span-2 flex gap-2 flex-col">
-          <h3 className="text-2xl font-semibold mb-3 text-white">Product</h3>
+          <h3 className="text-xl font-semibold mb-3 text-white">Product</h3>
           <a href="#">About Us</a>
           <a href="#">Work</a>
           <a href="#">Latest News</a>
           <a href="#">Careers</a>
         </div>
         <div className="col-span-2 flex gap-2 flex-col">
-          <h3 className="text-2xl font-semibold mb-3 text-white">Support</h3>
+          <h3 className="text-xl font-semibold mb-3 text-white">Support</h3>
           <a href="#">Help Desk</a>
           <a href="#">Sales</a>
           <a href="#">Become a Partner</a>
           <a href="#">Developers</a>
         </div>
         <div className="col-span-2 flex gap-2 flex-col">
-          <h3 className="text-2xl font-semibold mb-3 text-white">Contact</h3>
+          <h3 className="text-xl font-semibold mb-3 text-white">Contact</h3>
           <a href="#">524 Broadway, NYC</a>
           <a href="#">+1777-978-5570</a>
         </div>
