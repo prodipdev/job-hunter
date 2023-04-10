@@ -7,7 +7,7 @@ const AppliedCard = ({ circular }) => {
     circular;
   return (
     <div className="flex items-center justify-between border rounded-md p-3 text-left">
-      <div className="bg-gray-100 h-36 w-36 flex items-center justify-center rounded-md">
+      <div className="bg-gray-100 h-36 w-36 flex items-center justify-center rounded-md shadow shadow-violet-400">
         <img className="h-7" src={image} alt="logo" />
       </div>
       <div>
