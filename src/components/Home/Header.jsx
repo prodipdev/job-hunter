@@ -13,7 +13,7 @@ const Header = () => {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <button className="btn-gradient mt-5">Get Started</button>
+        <button className="px-3 py-2 gradient mt-5">Get Started</button>
       </div>
       <div>
         <img src="/src/assets/hero.png" alt="Hero Image" />

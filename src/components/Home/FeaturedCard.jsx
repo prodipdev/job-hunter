@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const FeaturedCard = ({ job }) => {
   const { id, image, position, company, job_nature, location, salary } = job;
@@ -26,7 +27,9 @@ const FeaturedCard = ({ job }) => {
           {salary}
         </span>
       </div>
-      <button className="mt-5 px-2 py-1 gradient">View More</button>
+      <Link to={`/details/${id}`}>
+        <button className="mt-5 px-2 py-1 gradient">View Details</button>
+      </Link>
     </div>
   );
 };

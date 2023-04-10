@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import FeaturedCard from "./FeaturedCard";
+import { MainContext } from "../../RootLayout";
 
 const Featured = () => {
   const [circularList, setCircularList] = useState([]);
-  const { jobList } = useLoaderData();
-  console.log(circularList);
+  const { jobCircular } = useContext(MainContext);
 
   // Initially showing 4 job circular
   useEffect(() => {
-    setCircularList(jobList.slice(0, 4));
+    setCircularList(jobCircular.slice(0, 4));
   }, []);
 
   // Showing all job circular when see all button clicked
   const seeFullJobs = () => {
-    setCircularList(jobList);
+    setCircularList(jobCircular);
   };
 
   return (

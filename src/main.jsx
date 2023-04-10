@@ -8,16 +8,17 @@ import Statistics from "./components/Statistics/Statistics";
 import Blog from "./components/Blog/Blog";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import { jobListAndCategory } from "./components/Loaders/Loader";
+import JobDetails from "./components/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout></RootLayout>,
+    loader: jobListAndCategory,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        loader: jobListAndCategory,
       },
       {
         path: "/statistic",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/details/:id",
+        element: <JobDetails></JobDetails>,
       },
     ],
   },
