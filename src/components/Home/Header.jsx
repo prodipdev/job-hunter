@@ -1,7 +1,5 @@
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
 
-const notify = () => toast("Here is your toast.");
 const Header = () => {
   return (
     <div className="px-5 sm:px-10 flex flex-col-reverse sm:flex-row items-center bg-primary">
@@ -15,9 +13,7 @@ const Header = () => {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <button className="px-3 py-2 gradient mt-5" onClick={notify}>
-          Get Started
-        </button>
+        <button className="px-3 py-2 gradient mt-5">Get Started</button>
       </div>
       <div>
         <img src="https://i.ibb.co/7bbR6Lk/Hero-Image.webp" alt="Hero Image" />

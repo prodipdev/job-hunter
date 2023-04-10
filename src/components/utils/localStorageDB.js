@@ -8,7 +8,7 @@ const addToLocalDb = (id) => {
   if (!existId) {
     appliedList.push(id);
     localStorage.setItem("applied-jobs", JSON.stringify(appliedList));
-    successfully();
+    successfullyAdded();
   } else {
     alreadyAdded();
   }
