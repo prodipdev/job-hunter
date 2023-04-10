@@ -11,7 +11,9 @@ const RootLayout = () => {
   return (
     <MainContext.Provider value={{ jobCircular, category }}>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="md:min-h-[calc(100vh-480px)] mb-10">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </MainContext.Provider>
   );

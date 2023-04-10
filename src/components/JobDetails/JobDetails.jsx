@@ -32,7 +32,7 @@ const JobDetails = () => {
       <h2 className="text-2xl font-semibold text-center bg-primary pb-16 pt-10">
         Job Details
       </h2>
-      <div className="flex px-10 mt-14 gap-5 justify-center text-gray-700">
+      <div className="flex flex-col sm:flex-row px-10 mt-14 gap-5 justify-center text-gray-700">
         <div className="space-y-3">
           <p>
             <span className="font-semibold underline">Job Description:</span>{" "}
