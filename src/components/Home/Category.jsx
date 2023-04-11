@@ -6,7 +6,7 @@ const Category = () => {
   const { category } = useContext(MainContext);
   return (
     <div className="text-center mt-12 px-5 sm:px-10">
-      <h2 className="text-2xl font-semibold">Job Category List</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold">Job Category List</h2>
       <p className="text-sm mt-2 text-gray-600">
         Explore thousands of job opportunities with all the information you
         need. Its your future

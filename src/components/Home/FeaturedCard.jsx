@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { scrollTop } from "../utils/utils";
 
 const FeaturedCard = ({ job }) => {
   const { id, image, position, company, job_nature, location, salary } = job;
@@ -28,7 +29,9 @@ const FeaturedCard = ({ job }) => {
         </span>
       </div>
       <Link to={`/details/${id}`}>
-        <button className="mt-5 px-2 py-1 gradient">View Details</button>
+        <button className="mt-5 px-2 py-1 gradient" onClick={scrollTop}>
+          View Details
+        </button>
       </Link>
     </div>
   );

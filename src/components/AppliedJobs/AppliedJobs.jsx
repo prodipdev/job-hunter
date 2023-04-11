@@ -4,6 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { getAppliedList } from "../utils/localStorageDB";
 import { MainContext } from "../../RootLayout";
 import AppliedCard from "./AppliedCard";
+import { Link } from "react-router-dom";
 
 const AppliedJobs = () => {
   const [circularList, setCircularList] = useState([]);
@@ -57,10 +58,13 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold text-center bg-primary pb-16 pt-10">
-        Applied Jobs
-      </h2>
-      <div className="grid gap-5 p-10">
+      <div className="text-center bg-primary py-5 sm:pb-16 mb-10 sm:pt-10">
+        <Link to={"/"} className="sm:hidden">
+          <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
+        </Link>
+        <h2 className="text-xl sm:text-2xl font-semibold">Applied Jobs</h2>
+      </div>
+      <div className="grid gap-5 px-5 sm:px-10">
         <div className="text-right">
           <Menu as="div" className="relative inline-block text-left">
             <div>

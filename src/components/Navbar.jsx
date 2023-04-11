@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { scrollToTarget, scrollTop } from "./utils/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMenu = () => {
+    scrollTop();
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <div
-        className="absolute sm:hidden left-2 top-1"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
+      <div className="absolute sm:hidden left-2 top-1" onClick={isMenu}>
         {isMenuOpen ? (
           <XMarkIcon className="h-10 w-10 text-violet-500" />
         ) : (
@@ -17,15 +20,23 @@ const Navbar = () => {
         )}
       </div>
       <nav
-        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-10 bg-primary absolute sm:static sm:top-0 ${
+        className={`flex flex-col sm:flex-row justify-between items-center gap-3 py-3 px-5 sm:px-10 bg-primary absolute sm:sticky sm:top-0 sm:rounded-none ${
           isMenuOpen ? "top-10 rounded-md duration-500" : "-top-60"
         }`}
       >
-        <Link to={"/"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <Link to={"/"} onClick={isMenu} className="hidden sm:block">
           <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
         </Link>
-        <ul className="flex flex-col sm:flex-row gap-4">
-          <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <ul className="flex flex-col sm:flex-row gap-5">
+          <li onClick={isMenu}>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li onClick={isMenu}>
             <NavLink
               to={"/statistic"}
               className={({ isActive }) => (isActive ? "active" : "default")}
@@ -33,7 +44,7 @@ const Navbar = () => {
               Statistic
             </NavLink>
           </li>
-          <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <li onClick={isMenu}>
             <NavLink
               to={"/applied"}
               className={({ isActive }) => (isActive ? "active" : "default")}
@@ -41,7 +52,7 @@ const Navbar = () => {
               Applied Jobs
             </NavLink>
           </li>
-          <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <li onClick={isMenu}>
             <NavLink
               to={"/blog"}
               className={({ isActive }) => (isActive ? "active" : "default")}
@@ -50,8 +61,11 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <Link to={"/"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <button className="px-3 py-2 font-semibold gradient">
+        <Link to={"/"}>
+          <button
+            onClick={() => scrollToTarget("features")}
+            className="px-3 py-2 font-semibold gradient"
+          >
             Start Applying
           </button>
         </Link>

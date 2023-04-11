@@ -6,7 +6,7 @@
   },
   {
     "id": "A2",
-    "question": "What is a custom hook in react ?",
+    "question": "What is a custom hook in React ?",
     "answer": "In React, a custom hook is a JavaScript function that lets you reuse logic between components. A custom hook is essentially a reusable piece of code that can be shared across multiple components."
   },
   {

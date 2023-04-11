@@ -9,6 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 const data = [
   {
     name: "A-1",
@@ -52,9 +53,14 @@ const Statistics = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold text-center bg-primary pb-16 mb-10 pt-10">
-        Assignment Analytics
-      </h2>
+      <div className="text-center bg-primary py-5 sm:pb-16 mb-10 sm:pt-10">
+        <Link to={"/"} className="sm:hidden">
+          <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
+        </Link>
+        <h2 className="text-xl sm:text-2xl font-semibold">
+          Assignment Analytics
+        </h2>
+      </div>
 
       <div className="flex justify-center items-center gap-2 mb-5">
         <span className="bg-amber-100 p-1 rounded-full">

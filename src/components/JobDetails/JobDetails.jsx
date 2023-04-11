@@ -8,12 +8,15 @@ import {
   EnvelopeIcon,
   MapPinIcon,
 } from "@heroicons/react/24/solid";
-import { addToLocalDb } from "../utils/localStorageDB";
+import { addToLocalDb, getAppliedList } from "../utils/localStorageDB";
+import { scrollTop } from "../utils/utils";
 
 const JobDetails = () => {
+  const appliedIdList = getAppliedList();
   const { jobCircular } = useContext(MainContext);
   const { id } = useParams();
   const job = jobCircular.find((job) => job.id === id);
+  const existingApplied = appliedIdList.find((appliedId) => appliedId === id);
 
   const {
     job_description,
@@ -28,10 +31,19 @@ const JobDetails = () => {
   } = job;
   return (
     <div>
-      <h2 className="text-2xl font-semibold text-center bg-primary pb-16 pt-10">
-        Job Details
-      </h2>
-      <div className="flex flex-col sm:flex-row px-10 mt-14 gap-5 justify-center text-gray-700">
+      <div className="text-center bg-primary py-5 sm:pb-16 mb-10 sm:pt-10">
+        <Link
+          to={"/"}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="sm:hidden"
+        >
+          <h2 className="text-xl font-bold tracking-wide">JobHunter</h2>
+        </Link>
+        <h2 className="text-xl sm:text-2xl font-semibold">
+          {existingApplied ? "Applied Job Details" : "Job Details"}
+        </h2>
+      </div>
+      <div className="flex flex-col sm:flex-row px-5 sm:px-10 mt-14 gap-5 justify-center text-gray-700">
         <div className="space-y-3">
           <p>
             <span className="font-semibold underline">Job Description:</span>{" "}
@@ -58,7 +70,9 @@ const JobDetails = () => {
         </div>
         <div>
           <div className="bg-primary p-3 rounded-md">
-            <h4 className="text-lg font-bold">Job Details</h4>
+            <h4 className="text-lg font-bold flex items-center justify-between">
+              Job Details
+            </h4>
             <hr />
             <p className="mt-2 flex gap-1">
               <span className="flex items-center gap-1 font-semibold">
@@ -98,14 +112,25 @@ const JobDetails = () => {
               <span>{location}</span>
             </p>
           </div>
-          <Link to={"/"}>
-            <button
-              onClick={() => addToLocalDb(id)}
-              className="mt-5 px-3 py-2 gradient w-full"
-            >
-              Apply Now
-            </button>
-          </Link>
+          {existingApplied ? (
+            <Link to={"/applied"}>
+              <button
+                className="mt-5 px-3 py-2 bg-violet-500 text-white rounded-md w-full"
+                onClick={scrollTop}
+              >
+                Back
+              </button>
+            </Link>
+          ) : (
+            <Link to={"/"} onClick={scrollTop}>
+              <button
+                onClick={() => addToLocalDb(id)}
+                className="mt-5 px-3 py-2 gradient w-full"
+              >
+                Apply Now
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

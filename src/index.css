@@ -10,14 +10,14 @@
 }
 
 .active {
-  @apply font-medium tracking-wide text-indigo-600 transition-colors duration-200;
+  @apply font-medium underline underline-offset-4 tracking-wide text-indigo-600 transition-colors duration-200;
 }
 
 .default {
   @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-600;
 }
 .gradient {
-  @apply bg-gradient-to-r from-blue-500 to-violet-500 rounded-md text-white;
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 rounded-md text-white shadow-md;
 }
 .bg-primary {
   @apply bg-[#f9f8ff];

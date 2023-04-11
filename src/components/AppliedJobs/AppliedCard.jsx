@@ -8,11 +8,11 @@ const AppliedCard = ({ circular }) => {
 
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between border rounded-md p-3 text-left">
-      <div className="bg-gray-100 h-36 w-36 flex items-center justify-center rounded-md shadow shadow-violet-400">
+      <div className="bg-gray-100 h-36 w-3/4 sm:w-36 flex items-center justify-center rounded-md shadow shadow-violet-400">
         <img className="h-7" src={image} alt="logo" />
       </div>
       <div>
-        <h3 className="text-lg font-semibold">{position}</h3>
+        <h3 className="text-lg font-semibold mt-4 sm:mt-0">{position}</h3>
         <p className="text-sm text-gray-600 font-semibold">{company}</p>
         <div className="mt-3 space-x-3">
           <span className="px-3 border text-violet-500 border-violet-500 rounded">
@@ -34,7 +34,9 @@ const AppliedCard = ({ circular }) => {
         </div>
       </div>
       <Link to={`/details/${id}`}>
-        <button className="mt-5 px-2 py-1 gradient">View Details</button>
+        <button className="mt-5 px-2 py-1 gradient" h>
+          View Details
+        </button>
       </Link>
     </div>
   );
