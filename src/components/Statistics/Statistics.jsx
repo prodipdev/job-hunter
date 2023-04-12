@@ -91,7 +91,7 @@ const Statistics = () => {
             type="monotone"
             dataKey="Marks"
             stroke="#8884d9"
-            fill="#8884d8"
+            fill="#ccb3ff"
           />
         </AreaChart>
       </ResponsiveContainer>

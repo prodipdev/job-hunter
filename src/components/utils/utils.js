@@ -14,7 +14,7 @@ const scrollToTarget = (id) => {
         behavior: "smooth",
       });
     }
-  }, 0);
+  }, 10);
 };
 
 export { scrollTop, scrollToTarget };

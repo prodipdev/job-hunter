@@ -18,6 +18,10 @@ const JobDetails = () => {
   const job = jobCircular.find((job) => job.id === id);
   const existingApplied = appliedIdList.find((appliedId) => appliedId === id);
 
+  const goBack = () => {
+    window.history.back();
+  };
+
   const {
     job_description,
     job_responsibility,
@@ -54,7 +58,7 @@ const JobDetails = () => {
             <span className="font-semibold underline">Job Responsibility:</span>
             <ul>
               {job_responsibility.map((res, index) => (
-                <li key={index}>{res}.</li>
+                <li key={index}> {res}.</li>
               ))}
             </ul>
           </div>
@@ -69,51 +73,60 @@ const JobDetails = () => {
           </p>
         </div>
         <div>
-          <div className="bg-primary p-3 rounded-md">
-            <h4 className="text-lg font-bold flex items-center justify-between">
-              Job Details
-            </h4>
-            <hr />
-            <p className="mt-2 flex gap-1">
-              <span className="flex items-center gap-1 font-semibold">
-                <CurrencyDollarIcon className=" h-4 w-4 text-violet-400" />
-                Salary:
-              </span>
-              <span>{salary}</span>
-            </p>
-            <p className="flex gap-1">
-              <span className="flex items-center gap-1 font-semibold">
-                <IdentificationIcon className=" h-4 w-4 text-violet-400" />
-                Job Title:{" "}
-              </span>
-              <span>{position}</span>
-            </p>
-            <h4 className="text-lg font-bold mt-5">Contact Information</h4>
-            <hr />
-            <p className="mt-2 flex gap-1">
-              <span className="flex items-center gap-1 font-semibold">
-                <PhoneIcon className=" h-4 w-4 text-violet-400" />
-                Phone:{" "}
-              </span>
-              <span>{phone}</span>
-            </p>
-            <p className="flex gap-1">
-              <span className="flex items-center gap-1 font-semibold">
-                <EnvelopeIcon className=" h-4 w-4 text-violet-400" />
-                Email:{" "}
-              </span>
-              <span>{email}</span>
-            </p>
-            <p className="flex gap-1">
-              <span className="flex items-center gap-1 font-semibold">
-                <MapPinIcon className=" h-4 w-4 text-violet-400" />
-                Address:{" "}
-              </span>
-              <span>{location}</span>
-            </p>
+          <div className="bg-primary p-3 rounded-md relative flex justify-center items-center">
+            {existingApplied && (
+              <img
+                className="absolute opacity-40 h-full min-w-fit"
+                src="https://i.ibb.co/b2TZ0DD/istockphoto-1049425770-612x612-removebg-preview.png"
+                alt=""
+              />
+            )}
+            <div>
+              <h4 className="text-lg font-bold flex items-center justify-between">
+                Job Details
+              </h4>
+              <hr />
+              <p className="mt-2 flex gap-1">
+                <span className="flex items-center gap-1 font-semibold">
+                  <CurrencyDollarIcon className=" h-4 w-4 text-violet-400" />
+                  Salary:
+                </span>
+                <span>{salary}</span>
+              </p>
+              <p className="flex gap-1">
+                <span className="flex items-center gap-1 font-semibold">
+                  <IdentificationIcon className=" h-4 w-4 text-violet-400" />
+                  Job Title:{" "}
+                </span>
+                <span>{position}</span>
+              </p>
+              <h4 className="text-lg font-bold mt-5">Contact Information</h4>
+              <hr />
+              <p className="mt-2 flex gap-1">
+                <span className="flex items-center gap-1 font-semibold">
+                  <PhoneIcon className=" h-4 w-4 text-violet-400" />
+                  Phone:{" "}
+                </span>
+                <span>{phone}</span>
+              </p>
+              <p className="flex gap-1">
+                <span className="flex items-center gap-1 font-semibold">
+                  <EnvelopeIcon className=" h-4 w-4 text-violet-400" />
+                  Email:{" "}
+                </span>
+                <span>{email}</span>
+              </p>
+              <p className="flex gap-1">
+                <span className="flex items-center gap-1 font-semibold">
+                  <MapPinIcon className=" h-4 w-4 text-violet-400" />
+                  Address:{" "}
+                </span>
+                <span>{location}</span>
+              </p>
+            </div>
           </div>
           {existingApplied ? (
-            <Link to={"/applied"}>
+            <Link onClick={goBack}>
               <button
                 className="mt-5 px-3 py-2 bg-violet-500 text-white rounded-md w-full"
                 onClick={scrollTop}

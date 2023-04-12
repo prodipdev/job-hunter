@@ -13,7 +13,11 @@ const Footer = () => {
             majority have suffered alteration in some form.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href="#" className="rounded-full bg-white">
+            <a
+              href="https://web.facebook.com/prodipweb/"
+              target="_blank"
+              className="rounded-full bg-white"
+            >
               <img
                 className="w-9 h-9 p-2"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"

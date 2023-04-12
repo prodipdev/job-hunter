@@ -29,7 +29,10 @@ const Featured = () => {
         ))}
       </div>
       {circularList.length > 4 || (
-        <button onClick={seeFullJobs} className="mt-10 px-3 py-1 gradient">
+        <button
+          onClick={seeFullJobs}
+          className="mt-10 px-3 py-1 bg-gradient-to-r from-blue-400 to-violet-400 rounded-md text-white shadow-md font-semibold"
+        >
           See All Jobs
         </button>
       )}

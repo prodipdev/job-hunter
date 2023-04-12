@@ -17,8 +17,14 @@
   @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-600;
 }
 .gradient {
-  @apply bg-gradient-to-r from-blue-500 to-purple-500 rounded-md text-white shadow-md;
+  @apply bg-gradient-to-r from-blue-500 to-violet-500 rounded-md text-white shadow-md;
 }
 .bg-primary {
   @apply bg-[#f9f8ff];
+}
+
+.bg-success {
+  background-image: url("https://media.istockphoto.com/id/1049425770/vector/approved-certified-icon-certified-seal-icon-rosette-or-award-vector-icon-quality-accepted.jpg?s=612x612&w=0&k=20&c=zl1Y8zIeYczRQ9YJae6fBz0dRhVRMZh6Ut2i9dz_aiA=");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
