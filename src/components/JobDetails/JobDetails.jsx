@@ -9,7 +9,7 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/solid";
 import { addToLocalDb, getAppliedList } from "../utils/localStorageDB";
-import { scrollTop } from "../utils/utils";
+import { scrollToTarget, scrollTop } from "../utils/utils";
 
 const JobDetails = () => {
   const appliedIdList = getAppliedList();
@@ -129,13 +129,13 @@ const JobDetails = () => {
             <Link onClick={goBack}>
               <button
                 className="mt-5 px-3 py-2 bg-violet-500 text-white rounded-md w-full"
-                onClick={scrollTop}
+                onClick={() => scrollToTarget("features")}
               >
                 Back
               </button>
             </Link>
           ) : (
-            <Link to={"/"} onClick={scrollTop}>
+            <Link to={"/"} onClick={() => scrollToTarget("features")}>
               <button
                 onClick={() => addToLocalDb(id)}
                 className="mt-5 px-3 py-2 gradient w-full"

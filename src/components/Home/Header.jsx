@@ -1,4 +1,5 @@
 import React from "react";
+import { scrollToTarget } from "../utils/utils";
 
 const Header = () => {
   return (
@@ -13,7 +14,12 @@ const Header = () => {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <button className="px-3 mb-5 py-2 gradient mt-5">Get Started</button>
+        <button
+          onClick={() => scrollToTarget("features")}
+          className="px-3 mb-5 py-2 gradient mt-5"
+        >
+          Get Started
+        </button>
       </div>
       <div className="w-3/4 sm:w-fit bg-violet-100 rounded-t-full shadow shadow-indigo-300">
         <img src="https://i.ibb.co/7bbR6Lk/Hero-Image.webp" alt="Hero Image" />
