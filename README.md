@@ -5,7 +5,7 @@
 - [See Demo Live Site](https://jobs-hunter.netlify.app/)
 - Find top rated tech job circular
 - Sorting circular by job types
-- You will instant any type of job
+- You'll can apply for any type of tech job
 - Find your applied jobs
 - You will also find result chart
 
