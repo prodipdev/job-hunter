@@ -11,7 +11,7 @@
 ## That part was a bit challenging for me:
 
 I had to fetch data from two different sources at the same time. I used the Promise.all method to wait until both the jobs and categories data were ready before returning them.
-#### Fetching multiple data simultaneously had to be thought of in a different way.
+
 Is this better? Do you have any feedback or suggestions? 😊
 
 ```javascript
