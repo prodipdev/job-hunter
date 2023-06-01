@@ -2,16 +2,17 @@
 
 ## Features
 
-- [See Demo Live Site](https://jobs-hunter.netlify.app/)
-- Find top rated tech job circular
-- Sorting circular by job types
-- You'll can apply for any type of tech job
-- Find your applied jobs
-- You will also find result chart
+- [See Demo Live Site](https://job-hunter-in.web.app/)
+- Discover the best tech job opportunities from different categories.
+- Filter the jobs by type to narrow down your options and find your ideal fit.
+- Apply for any tech job in one click and monitor your application status.
+- Check your applied jobs and the result chart to track your progress.
 
 ## That part was a bit challenging for me:
 
-Fetching multiple data simultaneously had to be thought of in a different way.
+I had to fetch data from two different sources at the same time. I used the Promise.all method to wait until both the jobs and categories data were ready before returning them.
+#### Fetching multiple data simultaneously had to be thought of in a different way.
+Is this better? Do you have any feedback or suggestions? 😊
 
 ```javascript
 const jobListAndCategory = async () => {
